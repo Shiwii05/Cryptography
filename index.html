@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Modern Cryptography 227006120</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="hero">
+                <h2> Modern Cryptography</h2>
+            </div>
+            <div class="hero2">
+                <h5>Nama : Shiwi Ainun Ginanjar</h5>
+            </div>
+            <div class="hero3">
+                <h5>NPM : 227006120</h5>
+            </div>
+        </div>
+
+        <div id="menu" class="menu">
+            <button onclick="showEncryption()">Encryption</button>
+            <button onclick="showDecryption()">Decryption</button>
+        </div>
+        <div id="encryption" style="display: none;">
+            <div class="input-group">
+                <label for="plaintext">Plaintext:</label>
+                <input type="text" id="plaintext">
+            </div>
+            <div class="input-group">
+                <label for="encryptionKey">Encryption Key:</label>
+                <input type="text" id="encryptionKey">
+            </div>
+            <button class="btn" onclick="encrypt()">Encrypt</button>
+            <button class="btn" onclick="showMenu()">Back to Menu</button>
+            <div id="encryptionResult"></div>
+        </div>
+        <div id="decryption" style="display: none;">
+            <div class="input-group">
+                <label for="ciphertext">Ciphertext:</label>
+                <input type="text" id="ciphertext">
+            </div>
+            <div class="input-group">
+                <label for="decryptionKey">Decryption Key:</label>
+                <input type="text" id="decryptionKey">
+            </div>
+            <button class="btn" onclick="decrypt()">Decrypt</button>
+            <button class="btn" onclick="showMenu()">Back to Menu</button>
+            <div id="decryptionResult"></div>
+        </div>
+    </div>
+    <script src="skript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</body>
+</html>
